@@ -1,1 +1,1 @@
-A shell script that runs a python file
+A PYTHO PROJECT
