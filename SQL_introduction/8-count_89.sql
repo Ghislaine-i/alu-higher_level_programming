@@ -1,4 +1,6 @@
--- This SQL script inserts a new row into the 'first_table' in the specified database.
+-- This SQL script displays the number of records with id = 89 in the 'first_table'.
 -- The database name is passed as an argument to the mysql command.
--- Example usage: mysql -hlocalhost -uroot -p hbtn_0c_0 < 7-insert_new_row.sql
-INSERT INTO first_table (id, name) VALUES (89, 'Best School');
+-- Example usage: mysql -hlocalhost -uroot -p hbtn_0c_0 < 101-safely_divide_by_0.sql
+SELECT COUNT(*)
+FROM first_table
+WHERE id = 89;
