@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Function to display usage
 usage() {
   echo "Usage: $0 <URL>"
