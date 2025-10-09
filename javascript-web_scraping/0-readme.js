@@ -1,12 +1,12 @@
 #!/usr/bin/node
 
-// Import the file system module
+// Import the filesystem module
 const fs = require('fs');
 
-// The first argument (after the script name) is the file path
+// Get the file path from the first argument
 const filePath = process.argv[2];
 
-// Read the file in UTF-8 encoding
+// Read the file content in UTF-8
 fs.readFile(filePath, 'utf8', (err, data) => {
   if (err) {
     console.log(err);
