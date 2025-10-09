@@ -4,16 +4,16 @@
 const request = require('request');
 const fs = require('fs');
 
-// Get the URL and file path from command-line arguments
+// Get arguments from command line
 const url = process.argv[2];
 const filePath = process.argv[3];
 
-// Make a GET request to the given URL
-request(url, (error, response, body) => {
-  if (error) {
-    console.log(error);
+// Make a GET request to the URL
+request(url, (err, response, body) => {
+  if (err) {
+    console.log(err);
   } else {
-    // Write the body to the specified file (UTF-8 encoding)
+    // Write the body content to the specified file (UTF-8)
     fs.writeFile(filePath, body, 'utf8', (err) => {
       if (err) {
         console.log(err);
